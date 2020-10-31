@@ -1,0 +1,177 @@
+<title>KyunKyun.Net</title>
+<link href="https://cdn.jsdelivr.net/npm/video.js@7.5.1/dist/video-js.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/videojs-logo@2.1.1/dist/videojs-logo.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.css" rel="stylesheet">
+<!--<style>#h237{position:fixed !important;position:absolute;top:0;top:expression((t=document.documentElement.scrollTop?document.documentElement.scrollTop:document.body.scrollTop)+"px");left:0;width:102%;height:102%;background-color:#f9f9f9;opacity:.97;display:block;padding:10% 0}#h237 *{text-align:center;margin:0 auto;display:block;filter:none;font:bold 14px Verdana,Arial,sans-serif;text-decoration:none}#h237 ~ *{display:none}</style><div id="h237">-->
+<!--<span>Làm ơn hãy bật JavaScript!<br /></span></div>-->
+<!--<script>window.document.getElementById("h237").parentNode.removeChild(window.document.getElementById("h237"));(function(l,m){function n(a){a&&h237.nextFunction()}var h=l.document,p=["i","s","u"];n.prototype={rand:function(a){return Math.floor(Math.random()*a)},getElementBy:function(a,b){return a?h.getElementById(a):h.getElementsByTagName(b)},getStyle:function(a){var b=h.defaultView;return b&&b.getComputedStyle?b.getComputedStyle(a,null):a.currentStyle},deferExecution:function(a){setTimeout(a,250)},insert:function(a,b){var e=h.createElement("span"),d=h.body,c=d.childNodes.length,g=d.style,f=0,k=0;if("h237"==b){e.setAttribute("id",b);g.margin=g.padding=0;g.height="100%";for(c=this.rand(c);f<c;f++)1==d.childNodes[f].nodeType&&(k=Math.max(k,parseFloat(this.getStyle(d.childNodes[f]).zIndex)||0));k&&(e.style.zIndex=k+1);c++}e.innerHTML=a;d.insertBefore(e,d.childNodes[c-1])},displayMessage:function(a){var b=this;a="abisuq".charAt(b.rand(5));b.insert("<"+a+'><h1>XIN VUI LÒNG TẮT ADBLOCK</h1> <a href="JavaScript:window.location.reload()">[ Tải Lại ]</a>'+("</"+a+">"),"h237");h.addEventListener&&b.deferExecution(function(){b.getElementBy("h237").addEventListener("DOMNodeRemoved",function(){b.displayMessage()},!1)})},i:function(){for(var a="DivTopAd,ad-zone-1,ad_190x90,ads-sticky,iqadtile5,leftframeAD,tobsideAd,ad,ads,adsense".split(","),b=a.length,e="",d=this,c=0,g="abisuq".charAt(d.rand(5));c<b;c++)d.getElementBy(a[c])||(e+="<"+g+' id="'+a[c]+'"></'+g+">");d.insert(e);d.deferExecution(function(){for(c=0;c<b;c++)if(null==d.getElementBy(a[c]).offsetParent||"none"==d.getStyle(d.getElementBy(a[c])).display)return d.displayMessage("#"+a[c]+"("+c+")");d.nextFunction()})},s:function(){var a={'pagead2.googlesyndic':'google_ad_client','js.adscale.de/getads':'adscale_slot_id','get.mirando.de/miran':'adPlaceId'},b=this,e=b.getElementBy(0,"script"),d=e.length-1,c,g,f,k;h.write=null;for(h.writeln=null;0<=d;--d)if(c=e[d].src.substr(7,20),a[c]!==m){f=h.createElement("script");f.type="text/javascript";f.src=e[d].src;g=a[c];l[g]=m;f.onload=f.onreadystatechange=function(){k=this;l[g]!==m||k.readyState&&"loaded"!==k.readyState&&"complete"!==k.readyState||(l[g]=f.onload=f.onreadystatechange=null,e[0].parentNode.removeChild(f))};e[0].parentNode.insertBefore(f,e[0]);b.deferExecution(function(){if(l[g]===m)return b.displayMessage(f.src);b.nextFunction()});return}b.nextFunction()},u:function(){var a="ad&adv_keywords=,-page-peel/,/adchain.,/adfootright.,/adsxml/ad,/adyard300.,/impopup/ad,/loadadsparam.,/meme_ad.,_adshare.".split(","),b=this,e=b.getElementBy(0,"img"),d,c;e[0]!==m&&e[0].src!==m&&(d=new Image,d.onload=function(){c=this;c.onload=null;c.onerror=function(){p=null;b.displayMessage(c.src)};c.src=e[0].src+"#"+a.join("")},d.src=e[0].src);b.deferExecution(function(){b.nextFunction()})},nextFunction:function(){var a=p[0];a!==m&&(p.shift(),this[a]())}};l.h237=h237=new n;h.addEventListener?l.addEventListener("load",n,!1):l.attachEvent("onload",n)})(window);</script>-->
+<style>.video-dimensions {
+    width: 100%;
+    height: 100%;}
+  .video-js .vjs-current-time { display: block; }
+  .video-js .vjs-time-divider { display: block; }
+  .video-js .vjs-duration { display: block; }
+  .video-js .vjs-remaining-time { display: block; }
+  
+  .video-js .vjs-mute-control { display: block; }
+  .video-js .vjs-volume-menu-button { display: block; }
+  .video-js .vjs-volume-bar { display: block; }
+  .vjs-big-play-button {
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://anivsub.org/wp-content/uploads/2020/04/favicon.png');
+      background-repeat: no-repeat;
+      background-size: 46px;
+      background-position: 50% calc(50% - 10px);
+      border: none !important; // @stylint ignore
+      box-shadow: none !important; // @stylint ignore
+      &:before {
+        content: "";
+        display: none;
+      }
+      &:hover {
+        background-color: transparent;
+        opacity: .1;
+      }
+        #wrapper {
+            min-height: 100%; 
+        }
+body{
+    margin: 0;
+}
+  }
+  .video-js .vjs-tech {
+    top: -2px;
+}
+
+.video-js {
+    overflow: hidden;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+  video-js[poster]{
+    object-fit: cover;
+  }
+  .vjs-poster {
+    background-size: cover;
+    background-position: inherit;
+  }
+.vjs-paused.vjs-has-started.video-js .vjs-big-play-button,.video-js.vjs-ended .vjs-big-play-button,.video-js.vjs-paused .vjs-big-play-button {
+    display: block
+}
+
+.video-js .vjs-load-progress div,.vjs-seeking .vjs-big-play-button,.vjs-waiting .vjs-big-play-button {
+    display: none!important
+}
+
+.video-js .vjs-mouse-display:after,.video-js .vjs-play-progress:after {
+    padding: 0 .4em .3em
+}
+
+.video-js.vjs-ended .vjs-loading-spinner {
+    display: none;
+}
+
+.video-js.vjs-ended .vjs-big-play-button {
+    display: block !important;
+}
+
+video-js.vjs-ended .vjs-big-play-button,.video-js.vjs-paused .vjs-big-play-button,.vjs-paused.vjs-has-started.video-js .vjs-big-play-button {
+    display: block
+}
+
+.video-js .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
+    margin-left: -1.5em;
+    margin-top: -1em
+}
+
+.video-js .vjs-big-play-button {
+    background-color: rgba(255,255,255,0);
+    font-size: 3.5em;
+    border-radius: 50%;
+    height: 2em !important;
+    line-height: 2em !important;
+    margin-top: -1em !important
+}
+
+.video-js:hover .vjs-big-play-button,.video-js .vjs-big-play-button:focus,.video-js .vjs-big-play-button:active {
+    background-color: rgba(0,0,0,0)
+}
+
+.video-js .vjs-loading-spinner {
+    border-color: rgba(255,255,255,0.7)
+}
+
+.video-js .vjs-control-bar2 {
+    background-color: transparent
+}
+
+.video-js .vjs-control-bar {
+    background-color: rgba(0,0,0,0) !important;
+    color: #ffffff;
+}
+
+.video-js .vjs-play-progress,.video-js  .vjs-volume-level {
+    background-color: #ffffff
+}
+
+.video-js .vjs-big-play-button {
+    height: 2em !important;
+    width: 2em !important;
+    line-height: 1.9em !important;
+    margin-top: -1em !important;
+    margin-left: -1em;
+    border-width: 0px;
+}
+
+.video-js .vjs-icon-play:before, .video-js .vjs-big-play-button:before {
+    font-size: 50px;
+}
+
+
+.video-js .vjs-load-progress {
+    background: rgba(255,255,255,0.5);
+}      
+  </style>
+<div>
+<video-js poster="https://kyunkyun.net/wp-content/uploads/2020/09/backdrop.png"data-setup='{"poster":"https://kyunkyun.net/wp-content/uploads/2020/09/backdrop.png"}' width="100%" height="100%" id=video class="vjs-theme-city vjs-big-play-centered" controls autoplay=false preload="auto">
+  <source
+     src="{{hd}}"
+     type="{{type}}">
+</video-js>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/video.js@7.5.1/dist/video.min.js"></script>
+<script src="https://unpkg.com/@videojs/http-streaming@2.2.3/dist/videojs-http-streaming.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-hotkeys/0.2.26/videojs.hotkeys.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-seek-buttons/dist/videojs-seek-buttons.min.js"></script>
+<script>
+var player = videojs('video');
+player.ready(function() {
+  this.hotkeys({
+    volumeStep: 0.1,
+    seekStep: 5,
+    enableModifiersForNumbers: false,
+    alwaysCaptureHotkeys: true,
+  });
+});
+player.play();
+player.seekButtons({
+    forward: 10,
+    back: 10
+  });
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176558902-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176558902-1');
+</script>
+

@@ -1,0 +1,39 @@
+<title>KyunKyun.Net P2P Demo</title>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/p2p-media-loader-core@latest/build/p2p-media-loader-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@latest/build/p2p-media-loader-hlsjs.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+  </head>
+  <style type="text/css">html,body { height:100%; width:100%; padding:0; margin:0; }
+    #video {position:absolute; z-index:0; height:100%;width:100%; padding:0; margin:0;} video {object-fit: fill;}
+    .overlay a{ list-style-type:none; text-decoration:none;}
+    .overlay h1 {position: absolute; top:0px; left:10%; z-index: 1;
+    font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: 701; color: #0FFF00;}</style>
+    <style>
+    #player{width:100%;height:100%;position:absolute;top:0;right:0;left:0}
+    video {object-fit: fill;}</style>
+  <body>
+    <div id="player"></div>
+    <script>
+        if (p2pml.hlsjs.Engine.isSupported()) {
+            var engine = new p2pml.hlsjs.Engine();
+
+            var player = new Clappr.Player({
+                parentId: "#player",
+                source: "{{hd}}",
+                mute: true,
+                autoPlay: true,
+                playback: {
+                    hlsjsConfig: {
+                        liveSyncDurationCount: 7,
+                        loader: engine.createLoaderClass()
+                    }
+                }
+            });
+
+            p2pml.hlsjs.initClapprPlayer(player);
+        } else {
+            document.write("Not supported :(");
+        }
+    </script>
+  </body>
