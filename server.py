@@ -325,10 +325,10 @@ def generate(link):
     return cdn+"\n"
 
 main = Flask(__name__) #setup vaariables
-main.config["MONGO_URI"] = "mongodb+srv://admin:SRwiE3Bd5ydzXIQN@cluster0-lqumo.mongodb.net/icqpublic?retryWrites=true&w=majority"
-main.config["CELERY_RESULT_BACKEND"] = "mongodb+srv://admin:SRwiE3Bd5ydzXIQN@cluster0-lqumo.mongodb.net/worker?retryWrites=true&w=majority"
+main.config["MONGO_URI"] = 
+main.config["CELERY_RESULT_BACKEND"] = 
 main.config["CELERY_BROKER_URL"]="amqp://localhost//"
-main.config["SECRET_KEY"] = "04082004"
+main.config["SECRET_KEY"] = 
 method_requests_mapping = {
     'GET': requests.get,
     'HEAD': requests.head,
